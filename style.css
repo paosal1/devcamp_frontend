@@ -1,0 +1,27 @@
+p{
+    color: darkcyan;
+    font: arial;
+    font-size: 18px;
+}
+
+body{
+    background-color: rgb(173, 209, 209)
+}
+
+.contenido{
+text-align: center;
+}
+
+.boton{
+    border: 0;
+    background-color: darkslategray;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 20px;
+    margin-top: 30px;
+}
+
+img{
+    height: 110px;
+    margin-top: 20px;
+}

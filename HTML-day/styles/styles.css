@@ -1,0 +1,23 @@
+body{
+    margin: 0%;
+    padding: 0%
+}
+.navbar {
+    background: white;
+    height: 70px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, .15);
+}
+
+.navbar .navbar-container{
+    padding: 15px;
+    px;
+}
+.navbar .navbar-container .navbar-container-left{
+float: left;
+height: 40px;
+}
+
+.navbar .navbar-container .navbar-container-right{
+float: right;
+margin-top: 10px;
+}
