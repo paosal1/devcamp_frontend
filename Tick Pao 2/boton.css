@@ -1,0 +1,19 @@
+body {
+    background: lightblue;
+}
+
+.ejemplo{
+    background: transparent;
+    padding: 6px 12px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 2em;
+    transition: all 0.3s ease-in;
+}
+
+.ejemplo:hover {
+    background: rgba(58, 204, 21, 0.1);
+    cursor: pointer;
+    color: rgb(58, 204, 21);
+    border-color: green;
+}

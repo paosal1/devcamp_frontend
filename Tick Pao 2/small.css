@@ -1,0 +1,43 @@
+@media screen and (max-width: 667px){
+.main .main-text h1{
+font-size: .8em;
+}
+
+.main .main-text p{
+font-size: .5em;
+}
+
+.join{
+width: 100px;
+font-size: .4em;
+}
+
+.button{
+font-size: .9em; 
+}
+
+#mona, #mona2{
+display:none;
+}
+
+.img-desc1, .img-desc2{
+    padding: 20px;
+}
+
+.img-desc1 .join{
+    font-size: .9em;
+}
+
+.img-desc2 .join{
+    font-size: .9em;
+}
+
+footer{
+    font-size: .4em;
+}
+
+
+
+
+
+}

@@ -1,0 +1,10 @@
+#background{
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease-in;
+
+}

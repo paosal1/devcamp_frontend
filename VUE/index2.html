@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <div id="app">
+        <p>
+        {{counter}}
+        </p>
+       <button @click='suma()'>Sumar</button>
+       <button @click='resta()'>Restar</button>
+    </div> -->
+
+
+    <!-- <div id="directivas">
+        <div v-if="visible">
+        <p>
+           Es verdadero
+        </p>
+         </div>
+         <div v-else-if="other">
+                <p>
+                   Other
+                </p>
+                 </div>
+         <div v-else="visible">
+                <p>
+                   Es falso
+                </p>
+                 </div>
+         <button @click='toggle()'>Toggle</button> 
+    </div> -->
+
+    <div id="directivas">
+        <form @submit.prevent= "addTask(newTask)"> 
+            <input v-model='newTask' type="text">
+            <button @click=addTask(newTask)>Agregar</button>
+        </form>
+
+        <h3>Tareas por hacer</h3>
+        <ul v-for="task in uncompletedTasks">
+            <li :style = "{textDecoration: task.completed ? 'line-through' : 'none'}">
+                <input v-model = "task.completed" type= "checkbox">
+                    {{task.name}}
+
+            </li>
+        
+        </ul>
+        <h3>Tareas completadas</h3>    
+        <ul v-for= "task in completedTasks">
+            <li class= "completed">
+                    <input v-model = "task.completed" type= "checkbox">
+                    {{task.name}}
+            </li>
+        
+        </ul>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

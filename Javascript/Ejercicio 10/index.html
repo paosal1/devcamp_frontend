@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Ejercicios</title>
+</head>
+<body>
+
+
+<button onclick= "changetext()">Cambiar texto magicamente</button>
+<div id= "hola"></div>
+    <script>
+
+var element = document.getElementById('hola');
+
+for (var i =1; i<=10 ; i++){
+    element.innerHTML += i + ' '
+}
+
+    element.style.color = 'red'
+    element.style.fontSize = '200px'
+
+console.log (element.style)
+
+function changetext () {
+    element.innerHTML = 'El texto ha cambiado magicamente'
+}
+
+    </script>
+</body>
+</html>
